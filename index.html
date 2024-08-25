@@ -6,8 +6,145 @@
     <title>Artisan Burguer</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/media-query.css">
 </head>
 <body>
+
+    <header>
+        <div class="container-header">
+            <img src="assets/hamb-1.png" alt="">
+            <h1>Artisan Burguer</h1>
+            <p>Av. José Xavier de Aquino, São Miguel - RN</p>
+            <button>Seg à Dom - 18:00 as 23:00</button>
+        </div>
+    </header>
+
+
+    <main>
+        <h2>Conheça nosso menu</h2>
+
+        <div class="container-menu">
+
+            <!-- Hamburguer 1 -->
+            <div class="menu-item" id="cheese-burguer-double" data-name="Cheese Burguer Duplo" data-price="35.00">
+                <img src="assets/hamb-1.png" alt="">
+                <div class="item-text">
+                    <span>Cheese Burguer Duplo</span>
+                    <p>Pão levinho de fermentação natural de trigo, 
+                        burguer de 160g, queijo prato e maionese da casa.</p>
+                    <div class="item-price">
+                        <p>R$ 35,00</p>
+                        <button><i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburguer 2 -->
+            <div class="menu-item" id="cheese-burguer" data-name="Cheese Burguer" data-price="29.99">
+                <img src="assets/hamb-2.png" alt="">
+                <div class="item-text">
+                    <span>Cheese Burguer</span>
+                    <p>Pão levinho de fermentação natural de trigo, 
+                        burguer de 160g, queijo prato e maionese da casa.</p>
+                    <div class="item-price">
+                        <p>R$ 29,99</p>
+                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburguer 3 -->
+            <div class="menu-item" id="smash-burguer" data-name="Smash Burguer" data-price="24.99">
+                <img src="assets/hamb-3.png" alt="">
+                <div class="item-text">
+                    <span>Smash Burguer</span>
+                    <p>Pão levinho de fermentação natural de trigo, 
+                        burguer de 160g, queijo prato e maionese da casa.</p>
+                    <div class="item-price">
+                        <p>R$ 24,99</p>
+                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburguer 4 -->
+            <div class="menu-item" id="cheese-bacon" data-name="Cheese Bacon" data-price="27.99">
+                <img src="assets/hamb-4.png" alt="">
+                <div class="item-text">
+                    <span>Cheese Bacon</span>
+                    <p>Pão levinho de fermentação natural de trigo, 
+                        burguer de 160g, queijo prato e maionese da casa.</p>
+                    <div class="item-price">
+                        <p>R$ 27,99</p>
+                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburguer 5 -->
+            <div class="menu-item" id="cheddar-bacon" data-name="Cheddar Bacon" data-price="19.90">
+                <img src="assets/hamb-5.png" alt="">
+                <div class="item-text">
+                    <span>Cheddar Bacon</span>
+                    <p>Pão levinho de fermentação natural de trigo, 
+                        burguer de 160g, queijo prato e maionese da casa.</p>
+                    <div class="item-price">
+                        <p>R$ 19,90</p>
+                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hamburguer 6 -->
+            <div class="menu-item" id="triple-smash" data-name="Triple Smash" data-price="39.99">
+                <img src="assets/hamb-6.png" alt="">
+                <div class="item-text">
+                    <span>Triple Smash</span>
+                    <p>Pão levinho de fermentação natural de trigo, 
+                        burguer de 160g, queijo prato e maionese da casa.</p>
+                    <div class="item-price">
+                        <p>R$ 39,99</p>
+                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+
+    <div class="cart-div">
+        <div class="cart">
+            <h2>Seu Carrinho</h2>
+            <div class="cart-modal">
+                <div class="cart-item">
+                    <h3>Cheese Burguer</h3>
+                    <p>Quantidade: 2</p>
+                    <p>R$ 59.80</p>
+                </div>
+                <a href="">Remover</a>
+            </div>
+    
+            <div class="cart-addres">
+                <label for="iendereco">Endereço de entrega:</label>
+                <input type="text" name="endereco" id="iendereco" placeholder="Digite seu endereço">
+            </div>
+    
+            <div class="cart-finish">
+                <a href="">Fechar</a>
+                <button>Finalizar pedido</button>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-cart">
+            <p>( <span></span> ) Veja seu carrinho <i class="fa-solid fa-cart-shopping"></i></p>
+        </div>
+    </footer>
+
 
     
 
