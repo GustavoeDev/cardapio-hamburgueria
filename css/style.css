@@ -125,30 +125,37 @@ main > h2{
     padding: 20px;
     max-width: 600px;
     width: 100%;  
+    margin: 0px 10px;
+}
+
+.cart > p{
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
 }
 
 .cart a{
     color: #000000;
+    cursor: pointer;
 }
 
 .cart h2{
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 20px;
     text-align: center;
 }
 
 .cart-modal{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 0px;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .cart-item{
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .cart-addres{

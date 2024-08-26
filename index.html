@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/media-query.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
 
@@ -27,7 +28,7 @@
         <div class="container-menu">
 
             <!-- Hamburguer 1 -->
-            <div class="menu-item" id="cheese-burguer-double" data-name="Cheese Burguer Duplo" data-price="35.00">
+            <div class="menu-item" id="cheese-burguer-double">
                 <img src="assets/hamb-1.png" alt="">
                 <div class="item-text">
                     <span>Cheese Burguer Duplo</span>
@@ -35,13 +36,13 @@
                         burguer de 160g, queijo prato e maionese da casa.</p>
                     <div class="item-price">
                         <p>R$ 35,00</p>
-                        <button><i class="fa-solid fa-cart-plus"></i>
+                        <button class="btn-add" data-name="Cheese Burguer Duplo" data-price="35.00"><i class="fa-solid fa-cart-plus"></i>
                     </div>
                 </div>
             </div>
 
             <!-- Hamburguer 2 -->
-            <div class="menu-item" id="cheese-burguer" data-name="Cheese Burguer" data-price="29.99">
+            <div class="menu-item" id="cheese-burguer">
                 <img src="assets/hamb-2.png" alt="">
                 <div class="item-text">
                     <span>Cheese Burguer</span>
@@ -49,13 +50,13 @@
                         burguer de 160g, queijo prato e maionese da casa.</p>
                     <div class="item-price">
                         <p>R$ 29,99</p>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="btn-add" data-name="Cheese Burguer" data-price="29.99"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
 
             <!-- Hamburguer 3 -->
-            <div class="menu-item" id="smash-burguer" data-name="Smash Burguer" data-price="24.99">
+            <div class="menu-item" id="smash-burguer">
                 <img src="assets/hamb-3.png" alt="">
                 <div class="item-text">
                     <span>Smash Burguer</span>
@@ -63,13 +64,13 @@
                         burguer de 160g, queijo prato e maionese da casa.</p>
                     <div class="item-price">
                         <p>R$ 24,99</p>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="btn-add" data-name="Smash Burguer" data-price="24.99"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
 
             <!-- Hamburguer 4 -->
-            <div class="menu-item" id="cheese-bacon" data-name="Cheese Bacon" data-price="27.99">
+            <div class="menu-item" id="cheese-bacon">
                 <img src="assets/hamb-4.png" alt="">
                 <div class="item-text">
                     <span>Cheese Bacon</span>
@@ -77,13 +78,13 @@
                         burguer de 160g, queijo prato e maionese da casa.</p>
                     <div class="item-price">
                         <p>R$ 27,99</p>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="btn-add" data-name="Cheese Bacon" data-price="27.99"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
 
             <!-- Hamburguer 5 -->
-            <div class="menu-item" id="cheddar-bacon" data-name="Cheddar Bacon" data-price="19.90">
+            <div class="menu-item" id="cheddar-bacon">
                 <img src="assets/hamb-5.png" alt="">
                 <div class="item-text">
                     <span>Cheddar Bacon</span>
@@ -91,13 +92,13 @@
                         burguer de 160g, queijo prato e maionese da casa.</p>
                     <div class="item-price">
                         <p>R$ 19,90</p>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="btn-add" data-name="Cheddar Bacon" data-price="19.90"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
 
             <!-- Hamburguer 6 -->
-            <div class="menu-item" id="triple-smash" data-name="Triple Smash" data-price="39.99">
+            <div class="menu-item" id="triple-smash">
                 <img src="assets/hamb-6.png" alt="">
                 <div class="item-text">
                     <span>Triple Smash</span>
@@ -105,7 +106,7 @@
                         burguer de 160g, queijo prato e maionese da casa.</p>
                     <div class="item-price">
                         <p>R$ 39,99</p>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="btn-add" data-name="Triple Smash" data-price="39.99"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </div>
@@ -117,14 +118,10 @@
     <div class="cart-div">
         <div class="cart">
             <h2>Seu Carrinho</h2>
-            <div class="cart-modal">
-                <div class="cart-item">
-                    <h3>Cheese Burguer</h3>
-                    <p>Quantidade: 2</p>
-                    <p>R$ 59.80</p>
-                </div>
-                <a href="">Remover</a>
-            </div>
+            
+            <div class="cart-modal"></div>
+
+            <p>Total: <span class="cart-total">0.00</span></p>
     
             <div class="cart-addres">
                 <label for="iendereco">Endereço de entrega:</label>
@@ -132,7 +129,7 @@
             </div>
     
             <div class="cart-finish">
-                <a href="">Fechar</a>
+                <a>Fechar</a>
                 <button>Finalizar pedido</button>
             </div>
         </div>
@@ -141,7 +138,7 @@
 
     <footer>
         <div class="footer-cart">
-            <p>( <span></span> ) Veja seu carrinho <i class="fa-solid fa-cart-shopping"></i></p>
+            <p>( <span class="span-cart-add">0</span> ) Veja seu carrinho <i class="fa-solid fa-cart-shopping"></i></p>
         </div>
     </footer>
 
